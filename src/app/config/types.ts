@@ -1,5 +1,5 @@
 export type Config = {
   daysLimit: number;
   peopleLimit: number;
-  startDate?: Date;
+  startDate?: firebase.firestore.Timestamp;
 };

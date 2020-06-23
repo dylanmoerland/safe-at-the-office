@@ -43,10 +43,10 @@ const ConfigProvider: React.FC = ({ children }) => {
   const value = useMemo(
     () => ({
       config: {
+        ...config,
         peopleLimit: config?.peopleLimit || envPeopleLimit,
         daysLimit: config?.daysLimit || envDaysLimit,
-        startDate: config?.startDate ? new Date(config.startDate) : undefined,
-      },
+      } as Config,
       loading,
       error,
     }),

@@ -3,6 +3,7 @@ import { Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { useAuth } from 'app/auth/providers/AuthProvider';
 import { history } from 'app/global/history';
+import { ErrorBoundary } from 'components/modules/ErrorBoundary';
 import { theme } from 'styles/theme';
 import GlobalStyle from 'styles';
 
@@ -15,11 +16,13 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Router history={history}>
-        <Suspense fallback={null}>
-          {user?.uid ? <AuthenticatedApp /> : <UnauthenticatedApp />}
-        </Suspense>
-      </Router>
+      <ErrorBoundary>
+        <Router history={history}>
+          <Suspense fallback={null}>
+            {user?.uid ? <AuthenticatedApp /> : <UnauthenticatedApp />}
+          </Suspense>
+        </Router>
+      </ErrorBoundary>
     </ThemeProvider>
   );
 };
