@@ -4,6 +4,10 @@ We're living during a global pandamic right now and in many countries this has c
 
 # Useage
 
+Right now you can only login using a google account. You should only use this when you have a g-suite account with your own domain, this way you can secure the access to only people with a such an account.
+
+If really really really want to use this but your company doesn't use g-suite open an issue and with enough requests I'll create another option to manage access.
+
 ## Installation
 
 ## 1. Setting up firebase
@@ -50,14 +54,14 @@ click `save`
 
 ### 1.4 Securing the database
 
-In your recently created database go to `rules`. Edit the rule so that only your company domain is allowed by replacing `your-company-domain` with the correct one.
+In your recently created database go to `rules`. Edit the rule so that only your company domain is allowed by replacing `your-company-domain.com` with the correct one.
 
 ```
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /{document=**} {
-      allow read, write: if (request.auth.token.email.matches('.*@your-company-domain[.]com$') &&
+      allow read, write: if (request.auth.token.email.matches('.*@your-company-domain.com$') &&
         request.auth.token.email_verified)
     }
   }
@@ -80,6 +84,12 @@ And click publish
 
 In the root of the project create a `.env` file (for a development environment create `.env.development`).
 You can use the `.env.example` as an example for you `.env` file, just fill in the correct values for every variable.
+
+All firebase values can be found in the firebase console in your recently created project
+
+`REACT_APP_ALLOWED_DOMAINS=your-company-domain.com` (if multiple split them by `,`)
+`REACT_APP_PEOPLE_LIMIT=6` (this will be overwridden by configuration set in the config collection in firebase)
+`REACT_APP_DAYS_LIMIT=21` (this will be overwridden by configuration set in the config collection in firebase)
 
 ### 2.3 Setting up firebase
 
