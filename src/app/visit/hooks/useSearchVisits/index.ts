@@ -29,7 +29,6 @@ export const useSearchVisits = (query: string) => {
       loading,
       error,
     }),
-    [response, loading, error], // eslint-disable-line react-hooks/exhaustive-deps
-    // FIXME: https://github.com/facebook/react/issues/19061
+    [response, loading, error],
   );
 };

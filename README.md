@@ -87,6 +87,24 @@ You can use the `.env.example` as an example for you `.env` file, just fill in t
 
 All firebase values can be found in the firebase console in your recently created project
 
+`REACT_APP_FIREBASE_API_KEY=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_AUTH_DOMAIN=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_DATABASE_URL=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_PROJECT_ID=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_STORAGE_BUCKET=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_MESSAGING_SENDER_ID=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_APP_ID=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_APP_ID=` (can be found in the firebase console in your recently created project)
+
+`REACT_APP_FIREBASE_MEASUREMENT_ID=` (can be found in the firebase console in your recently created project)
+
 `REACT_APP_ALLOWED_DOMAINS=your-company-domain.com` (if multiple split them by `,`)
 
 `REACT_APP_PEOPLE_LIMIT=6` (this will be overwridden by configuration set in the config collection in firebase)

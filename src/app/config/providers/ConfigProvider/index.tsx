@@ -37,8 +37,7 @@ const ConfigProvider: React.FC = ({ children }) => {
       .limit(1),
   );
 
-  const config = useMemo(() =>  response?.docs[0]?.data(), [response]); // eslint-disable-line
-  // FIXME: https://github.com/facebook/react/issues/19061
+  const config = useMemo(() => response?.docs[0]?.data(), [response]);
 
   const value = useMemo(
     () => ({
@@ -50,8 +49,7 @@ const ConfigProvider: React.FC = ({ children }) => {
       loading,
       error,
     }),
-    [loading, error, config], // eslint-disable-line
-    // FIXME: https://github.com/facebook/react/issues/19061
+    [loading, error, config],
   );
 
   return <ConfigContext.Provider value={value}>{children}</ConfigContext.Provider>;

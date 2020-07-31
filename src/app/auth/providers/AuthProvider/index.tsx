@@ -31,8 +31,7 @@ const AuthProvider: React.FC = ({ children }) => {
     const domain = user?.email?.slice(user?.email?.indexOf('@') + 1);
 
     return !!(user?.emailVerified && domain && allowedDomains?.includes(domain));
-  }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
-  // FIXME: https://github.com/facebook/react/issues/19061
+  }, [user]);
 
   const value = useMemo(
     () => ({
@@ -48,8 +47,7 @@ const AuthProvider: React.FC = ({ children }) => {
       loading,
       error,
     }),
-    [user, loading, error], // eslint-disable-line react-hooks/exhaustive-deps
-    // FIXME: https://github.com/facebook/react/issues/19061
+    [user, loading, error, isAllowed],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
