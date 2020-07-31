@@ -17,7 +17,7 @@ export const useSearchVisits = (query: string) => {
           .collection('visit')
           .where('user.searchName', '>=', query)
           .where('user.searchName', '<=', getQueryEndCode(query))
-      : null,
+      : firestore.collection('visit'),
   );
 
   return useMemo(
