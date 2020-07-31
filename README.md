@@ -60,7 +60,7 @@ service cloud.firestore {
 }
 ```
 
-![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_4_config.png)
+![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png)
 
 ## 2. Installation
 
