@@ -34,7 +34,7 @@ Field: peopleLimit, Type: number, Value: number of people allowed at the office 
 
 Field: startDate, Type: datetime, Value: yesterday 12 o'clock
 
-click create
+click `save`
 
 ![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_3_config.png)
 
@@ -44,7 +44,7 @@ Document ID: auto id
 
 delete all fields
 
-click create
+click `save`
 
 ![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png)
 
