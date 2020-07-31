@@ -103,4 +103,4 @@ In the root of the directory
 
 # Development
 
-[Development documentation](https://github.com/dylanmerland/safe-at-the-office/blob/master/docs/development.md)
+[Development documentation](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/development.md)
