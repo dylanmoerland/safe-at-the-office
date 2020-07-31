@@ -29,7 +29,9 @@ For the `config` collection add the following fields
 Document ID: auto id
 
 Field: daysLimit, Type: number, Value: number of days allowed to plan in the future
+
 Field: peopleLimit, Type: number, Value: number of people allowed at the office per day
+
 Field: startDate, Type: datetime, Value: yesterday 12 o'clock
 
 click create
