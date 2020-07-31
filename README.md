@@ -44,6 +44,8 @@ delete all fields
 
 click create
 
+![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png)
+
 ### 1.4 Securing the database
 
 In your recently created database go to `rules`. Edit the rule so that only your company domain is allowed by replacing `your-company-domain` with the correct one.
@@ -60,7 +62,9 @@ service cloud.firestore {
 }
 ```
 
-![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png)
+And click publish
+
+![image](https://github.com/dylanmoerland/safe-at-the-office/blob/master/docs/images/1_4_rules.png)
 
 ## 2. Installation
 
