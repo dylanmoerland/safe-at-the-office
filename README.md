@@ -34,8 +34,7 @@ Field: startDate, Type: datetime, Value: yesterday 12 o'clock
 
 click create
 
-[img src="1_3_config.png"]
-![alt config](https://github.com/dylanmerland/safe-at-the-office/blob/master/docs/images/1_3_config.png?raw=true)
+![image](https://github.com/dylanmerland/safe-at-the-office/blob/master/docs/images/1_3_config.png?raw=true)
 
 For the `visit` collection add the following fields
 
@@ -61,7 +60,7 @@ service cloud.firestore {
 }
 ```
 
-![alt config](https://github.com/dylanmerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png?raw=true)
+![image](https://github.com/dylanmerland/safe-at-the-office/blob/master/docs/images/1_3_visit.png?raw=true)
 
 ## 2. Installation
 
