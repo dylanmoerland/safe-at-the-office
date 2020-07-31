@@ -88,7 +88,9 @@ You can use the `.env.example` as an example for you `.env` file, just fill in t
 All firebase values can be found in the firebase console in your recently created project
 
 `REACT_APP_ALLOWED_DOMAINS=your-company-domain.com` (if multiple split them by `,`)
+
 `REACT_APP_PEOPLE_LIMIT=6` (this will be overwridden by configuration set in the config collection in firebase)
+
 `REACT_APP_DAYS_LIMIT=21` (this will be overwridden by configuration set in the config collection in firebase)
 
 ### 2.3 Setting up firebase
