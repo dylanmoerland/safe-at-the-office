@@ -6,7 +6,7 @@ We're living during a global pandamic right now and in many countries this has c
 
 Right now you can only login using a google account. You should only use this when you have a g-suite account with your own domain, this way you can secure the access to only people with a such an account.
 
-If really really really want to use this but your company doesn't use g-suite open an issue and with enough requests I'll create another option to manage access.
+If you really really really want to use this but your company doesn't use g-suite open an issue and with enough requests I'll create another option to manage access.
 
 ## Installation
 
