@@ -12,7 +12,7 @@ If you really really really want to use this but your company doesn't use g-suit
 
 ## 1. Setting up firebase
 
-Beforer starting make sure you're using your companies google suite account if you have one. This will make it possible
+Beforer starting make sure you're using your companies google suite account if you have one. This will make it possible to enable domain based security
 
 ### 1.1 Creating a project
 
