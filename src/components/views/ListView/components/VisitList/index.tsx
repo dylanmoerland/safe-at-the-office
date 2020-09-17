@@ -32,7 +32,7 @@ const VisitList: React.FC = () => {
       {dates
         .filter(
           (date) =>
-            !debouncedQuery || visits?.some((visit) => isSameDay(date, visit?.date?.toDate())),
+            !debouncedQuery || visits.some((visit) => isSameDay(date, visit?.date?.toDate())),
         )
         .map((date) => (
           <VisitDay

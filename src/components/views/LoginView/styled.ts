@@ -49,3 +49,12 @@ export const Loading = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const Company = styled.h1`
+  position: absolute;
+  bottom: 24px;
+  width: calc(100vw - 48px);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 24px;
+`;

@@ -28,9 +28,9 @@ const AuthProvider: React.FC = ({ children }) => {
   const [user, loading, error] = useAuthState(auth);
 
   const isAllowed = useMemo(() => {
-    const domain = user?.email?.slice(user?.email?.indexOf('@') + 1);
+    const domain = user?.email?.slice(user?.email?.indexOf('@') + 1)?.trim();
 
-    return !!(user?.emailVerified && domain && allowedDomains?.includes(domain));
+    return !!(domain && allowedDomains?.includes(domain));
   }, [user]);
 
   const value = useMemo(

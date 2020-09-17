@@ -152,6 +152,11 @@ export const Content = styled.div<{ open: boolean }>`
 
 export const Name = styled.h2``;
 
+export const Company = styled.h3`
+  opacity: 0.7;
+  margin-top: -16px;
+`;
+
 export const Logout = styled.button`
   transition: opacity 0.3s ease;
   border: 0px;

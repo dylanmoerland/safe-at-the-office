@@ -1,7 +1,8 @@
 import React from 'react';
 import { User } from 'app/auth/types';
 import { useAuth } from 'app/auth/providers/AuthProvider';
-import { Container, Wrapper, Avatar, Name, Leave } from './styled';
+import { Container, Wrapper, Name, Leave } from './styled';
+import { Avatar } from 'components/common/Avatar';
 
 type VisitParticipantProps = {
   participant: User;
@@ -14,7 +15,7 @@ export const VisitParticipant: React.FC<VisitParticipantProps> = ({ participant,
   return (
     <Container>
       <Wrapper>
-        <Avatar image={participant.image || ''} />
+        <Avatar user={participant} />
         <div>
           <Name>{participant.name}</Name>
           {user.uid === participant.uid && <Leave onClick={leave}>leave</Leave>}

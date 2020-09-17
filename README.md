@@ -4,9 +4,9 @@ We're living during a global pandamic right now and in many countries this has c
 
 # Useage
 
-Right now you can only login using a google account. You should only use this when you have a g-suite account with your own domain, this way you can secure the access to only people with a such an account.
+Right now you can only login using a google or a microsoft account. You should only use this when you have a google or microsoft account with your own domain, this way you can secure the access to only people with a such an account.
 
-If you really really really want to use this but your company doesn't use g-suite open an issue and with enough requests I'll create another option to manage access.
+If you really really really want to use this but your company doesn't use google or microsoft open an issue and with enough requests I'll create another option to manage access.
 
 ## Installation
 
@@ -86,6 +86,10 @@ In the root of the project create a `.env` file (for a development environment c
 You can use the `.env.example` as an example for you `.env` file, just fill in the correct values for every variable.
 
 All firebase values can be found in the firebase console in your recently created project
+
+`REACT_APP_COMPANY_NAME=` (Set a company name to be displayed (optional))
+
+`REACT_APP_AUTH_PROVIDER=` (Set the auth provider you want to use (GOOGLE | MICROSOFT))
 
 `REACT_APP_FIREBASE_API_KEY=` (can be found in the firebase console in your recently created project)
 

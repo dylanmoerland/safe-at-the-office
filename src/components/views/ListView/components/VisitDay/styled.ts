@@ -23,6 +23,10 @@ export const Join = styled.button`
   color: ${({ theme }) => theme.colors.white};
   padding: 6px 8px;
   border-radius: 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const ImIn = styled(Join)`

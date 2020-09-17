@@ -13,6 +13,7 @@ import {
   Content,
   Logout,
   Name,
+  Company,
   SearchContainer,
   SearchBar,
 } from './styled';
@@ -83,6 +84,9 @@ export const HeaderBar = () => {
       </TopPart>
       <Content open={isOpen}>
         <Name>Hi, {user?.name}!</Name>
+        {process.env.REACT_APP_COMPANY_NAME && (
+          <Company>{process.env.REACT_APP_COMPANY_NAME}</Company>
+        )}
         <Logout onClick={() => auth.signOut()}>logout</Logout>
       </Content>
     </Container>

@@ -22,10 +22,10 @@ export const useSearchVisits = (query: string) => {
 
   return useMemo(
     () => ({
-      visits: response?.docs.map((doc) => ({
+      visits: (response?.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
-      })) as Visit[],
+      })) || []) as Visit[],
       loading,
       error,
     }),

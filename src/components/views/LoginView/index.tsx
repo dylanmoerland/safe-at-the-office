@@ -1,11 +1,11 @@
 import React from 'react';
-import firebase from 'firebase/app';
 import { auth } from 'app/global/firebase';
 import { useAuth } from 'app/auth/providers/AuthProvider';
 import Spinner from 'components/common/Spinner';
-import { Container, Wrapper, Title, Button, Loading } from './styled';
+import { Container, Wrapper, Title, Button, Loading, Company } from './styled';
+import { getAuthProvider } from 'app/auth/providers/getAuthProvider';
 
-const provider = new firebase.auth.GoogleAuthProvider();
+const provider = getAuthProvider();
 
 const LoginView: React.FC = () => {
   const { loading } = useAuth();
@@ -18,7 +18,7 @@ const LoginView: React.FC = () => {
         </Title>
         {!loading ? (
           <Button onClick={() => auth.signInWithRedirect(provider)} disabled={loading}>
-            Login with google
+            Login with {process.env.REACT_APP_AUTH_PROVIDER}
           </Button>
         ) : (
           <Loading>
@@ -26,6 +26,9 @@ const LoginView: React.FC = () => {
           </Loading>
         )}
       </Wrapper>
+      {process.env.REACT_APP_COMPANY_NAME && (
+        <Company>{process.env.REACT_APP_COMPANY_NAME}</Company>
+      )}
     </Container>
   );
 };
