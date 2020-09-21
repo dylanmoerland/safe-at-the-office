@@ -16,7 +16,7 @@ Before starting, make sure you're using your companies Google suite account if y
 
 ### 1.1 Creating a project
 
-Go to the firebase console https://console.firebase.Google.com/
+Go to the firebase console https://console.firebase.google.com/
 
 Click create project and follow the steps
 
@@ -89,7 +89,7 @@ All firebase values can be found in the firebase console in your recently create
 
 `REACT_APP_COMPANY_NAME=` (Set a company name to be displayed (optional))
 
-`REACT_APP_AUTH_PROVIDER=` (Set the auth provider you want to use (Google | Microsoft))
+`REACT_APP_AUTH_PROVIDER=` (Set the auth provider you want to use (GOOGLE | MICROSOFT))
 
 `REACT_APP_FIREBASE_API_KEY=` (can be found in the firebase console in your recently created project)
 
