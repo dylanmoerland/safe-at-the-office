@@ -22,7 +22,7 @@ Click create project and follow the steps
 
 ### 1.2 Create a database
 
-In your recently created project, go to database and click create database
+In your recently created project, go to Develop > Cloud Firestore and click create database
 
 ### 1.3 Setup database
 
