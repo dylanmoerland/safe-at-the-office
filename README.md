@@ -1,22 +1,22 @@
 # Safe at the office
 
-We're living during a global pandamic right now and in many countries this has changed our day to day lives quit drastically. Where I live, The Netherlands, we have a pollicy of working at home as much as possible and keeping your distance when you do have to come together. At my office we don't have the room to all be there at the same time and keep the required distance. So we set a limit for the amount of peopl allowed to be at the office for a given day. And I didn't like typing in a form, so I build an application to make managing this a lot easier! And I thought more people are probably facing this issue so I made it open source, so here it is! And completely free to host and manage all thanks to google firebase ❤️
+We're living during a global pandamic right now and in many countries this has changed our day to day lives quit drastically. Where I live, The Netherlands, we have a pollicy of working at home as much as possible and keeping your distance when you do have to come together. At my office we don't have the room to all be there at the same time and keep the required distance. So we set a limit for the amount of people allowed to be at the office for a given day. And I didn't like typing in a form, so I build an application to make managing this a lot easier! And I thought more people are probably facing this issue so I made it open source, so here it is! And completely free to host and manage all thanks to Google firebase ❤️
 
 # Usage
 
-Right now you can only login using a google or a microsoft account. You should only use this when you have a google or microsoft account with your own domain, this way you can secure the access to only people with a such an account.
+Right now you can only login using a Google or a Microsoft account. You should only use this when you have a Google or Microsoft account with your own domain, this way you can secure the access to only people with a such an account.
 
-If you really really really want to use this but your company doesn't use google or microsoft open an issue and with enough requests I'll create another option to manage access.
+If you really really really want to use this but your company doesn't use Google or Microsoft open an issue and with enough requests I'll create another option to manage access.
 
 ## Installation
 
 ## 1. Setting up firebase
 
-Beforer starting make sure you're using your companies google suite account if you have one. This will make it possible to enable domain based security
+Before starting, make sure you're using your companies Google suite account if you have one. This will make it possible to enable domain based security.
 
 ### 1.1 Creating a project
 
-Go to the firebase console https://console.firebase.google.com/
+Go to the firebase console https://console.firebase.Google.com/
 
 Click create project and follow the steps
 
@@ -89,7 +89,7 @@ All firebase values can be found in the firebase console in your recently create
 
 `REACT_APP_COMPANY_NAME=` (Set a company name to be displayed (optional))
 
-`REACT_APP_AUTH_PROVIDER=` (Set the auth provider you want to use (GOOGLE | MICROSOFT))
+`REACT_APP_AUTH_PROVIDER=` (Set the auth provider you want to use (Google | Microsoft))
 
 `REACT_APP_FIREBASE_API_KEY=` (can be found in the firebase console in your recently created project)
 
