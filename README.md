@@ -2,7 +2,7 @@
 
 We're living during a global pandamic right now and in many countries this has changed our day to day lives quit drastically. Where I live, The Netherlands, we have a pollicy of working at home as much as possible and keeping your distance when you do have to come together. At my office we don't have the room to all be there at the same time and keep the required distance. So we set a limit for the amount of peopl allowed to be at the office for a given day. And I didn't like typing in a form, so I build an application to make managing this a lot easier! And I thought more people are probably facing this issue so I made it open source, so here it is! And completely free to host and manage all thanks to google firebase ❤️
 
-# Useage
+# Usage
 
 Right now you can only login using a google or a microsoft account. You should only use this when you have a google or microsoft account with your own domain, this way you can secure the access to only people with a such an account.
 
